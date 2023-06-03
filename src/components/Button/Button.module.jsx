@@ -1,4 +1,6 @@
-﻿.Button-load {
+﻿import styled from '@emotion/styled';
+
+export const ButtonLoad = styled.button`
   display: block;
   margin: 20px auto;
   padding: 15px;
@@ -8,7 +10,8 @@
   background-color: rgb(37, 37, 173);
   color: white;
   cursor: pointer;
-}
-.Button-load:hover {
-  background-color: blue;
-}
+
+  &:hover {
+    background-color: blue;
+  }
+`;

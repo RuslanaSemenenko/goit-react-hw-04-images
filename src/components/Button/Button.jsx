@@ -1,16 +1,17 @@
-import './Button.css';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { ButtonLoad } from './Button.module.jsx';
 
 const Button = ({ onClick }) => {
   return (
-    <button className="Button-load" onClick={onClick}>
+    <ButtonLoad onClick={onClick}>
       Load more
-    </button>
+    </ButtonLoad>
   );
 };
-
-export default Button;
 
 Button.propTypes = {
   onClick: PropTypes.func,
 };
+
+export default Button;
